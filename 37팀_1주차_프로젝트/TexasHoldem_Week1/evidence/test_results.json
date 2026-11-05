@@ -1,0 +1,34 @@
+{
+  "environment": {
+    "os": "Linux",
+    "java": "openjdk version \"17.0.20\" 2026-07-21",
+    "host": "127.0.0.1",
+    "execution": "작성 지원 환경의 자동 검증; 학생 PC 실행 결과는 별도 확인"
+  },
+  "tests": [
+    {
+      "id": "T1",
+      "condition": "한글 메시지 2회 및 QUIT",
+      "result": "PASS",
+      "port": 54287
+    },
+    {
+      "id": "T2",
+      "condition": "서버 미실행 포트로 접속",
+      "result": "PASS",
+      "port": 60981
+    },
+    {
+      "id": "T3",
+      "condition": "줄바꿈 생략 후 LF 추가 전송",
+      "result": "PASS",
+      "port": 59421
+    },
+    {
+      "id": "T4",
+      "condition": "빈 줄 전송 후 QUIT",
+      "result": "PASS",
+      "port": 58673
+    }
+  ]
+}
