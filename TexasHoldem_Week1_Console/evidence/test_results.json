@@ -1,0 +1,36 @@
+{
+  "environment": {
+    "os": "Linux",
+    "java": "openjdk version \"21.0.13\" 2026-10-20",
+    "host": "127.0.0.1",
+    "execution": "작성 지원 환경의 검증; 학생 PC 실행 결과와 구분"
+  },
+  "tests": [
+    {
+      "id": "T1",
+      "condition": "한글·공백·영문 원문 왕복, QUIT은 전송 없이 종료",
+      "result": "PASS"
+    },
+    {
+      "id": "T2",
+      "condition": "서버 미실행 시 연결 실패 안내",
+      "result": "PASS"
+    },
+    {
+      "id": "T3",
+      "condition": "접속 안내 없음, 줄바꿈 기준 원문 응답, EOF 종료",
+      "result": "PASS"
+    },
+    {
+      "id": "T4",
+      "condition": "빈 줄을 그대로 돌려준 뒤 다음 문장 처리",
+      "result": "PASS"
+    },
+    {
+      "id": "T5",
+      "condition": "Linux 터미널의 한글 입력과 원문 응답",
+      "result": "PASS",
+      "scope": "Linux PTY 검증; Windows CMD/IME 실기는 별도 확인"
+    }
+  ]
+}
