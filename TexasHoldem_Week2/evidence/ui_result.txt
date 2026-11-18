@@ -1,1 +1,0 @@
-PASS actual ClientMain + GameView: join, chat, cards, host controls, disconnect; headless Swing render
